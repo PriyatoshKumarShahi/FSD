@@ -1,0 +1,101 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  color: blue;
+  height: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+.logo img{
+height: 50px;
+width: auto;
+}
+.nav-right ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  font-size: 1.1rem;
+    list-style-type: none;
+}
+.nav-right ul li a{
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-right ul li a:hover{
+  color: #79e4d9;
+
+}
+nav button{
+   display: inline-block;
+    padding: 8px 16px;
+    background: #41938b;
+    color: white;
+    font-size: 12px;
+    /* font-weight: bold; */
+    border: none;
+    text-decoration: none; 
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+  nav button{
+    display: inline-block;
+    padding: 8px 16px;
+    background: #41938b;
+    color: white;
+    font-size: 15px;
+    /* font-weight: bold; */
+    border: none;
+    text-decoration: none; 
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+  }
+ nav button:hover {
+    background: #55aca4;
+    transform: scale(1.05);
+  }
+
+  nav button:active {
+    background: #61d0d2;
+    transform: scale(0.98);
+  }
+nav button a{
+  text-decoration: none;
+  color: white;
+}
+  .section1 {
+    height: 85vh; 
+    background-image: url("https://codevita.tcsapps.com/assets_public/img/slide/Banner-1-CodeVita-website.webp"); 
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-bottom-left-radius: 300px;   
+  border-bottom-right-radius: 300px;
+    color: white;
+    opacity: 0.8;
+    
+  }
+
+  .section1 .heading h1{
+    align-items: center ;
+    font-size: 4rem;
+    text-align: center;
+    justify-content: center;
+    z-index: 1000;
+
+  }
+
+  .heading h1 i{
+    font-size: 2rem;
+    margin-top: -15px;
+    margin-right: 12px;
+  }
