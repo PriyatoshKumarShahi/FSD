@@ -81,14 +81,14 @@ nav button a{
     border-bottom-left-radius: 300px;   
   border-bottom-right-radius: 300px;
     color: white;
-    opacity: 0.6;
+    /* opacity: 0.6; */
     display: flex;
     justify-content: center;
     align-items: center;
   }
 .heading{
   z-index: 999;
-  color: black;
+  color: rgb(255, 255, 255);
 }
  .heading h1{
     display: flex;
