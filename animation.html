@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.ball {
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle at 30% 30%, #ff6f61, #e91e63);
+  border-radius: 50%;
+  position: relative;
+  animation: colorChange 3s ease-in-out infinite , positionShift 3s ease-in-out infinite;
+  animation-delay: -2s , -2s;
+  animation-direction: reverse;
+}
+
+@keyframes colorChange{
+  0%, 100% {
+    background: radial-gradient(circle at 30% 30%, #ff6f61, #e91e63);
+  }
+  50% {
+    background: radial-gradient(circle at 30% 30%, #ffeb3b, #ffc107);
+  }
+}
+
+@keyframes positionShift{
+  0%, 100% {
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateX(200px);
+    transform: translateY(200px);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="ball"></div>
+</body>
+</html>

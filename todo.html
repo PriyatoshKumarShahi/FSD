@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+
+  #li{
+    list-style-type: none;
+  }
+</style>
+<body>
+  
+
+  <input id="task" type="text" placeholder="enter your task">
+  <button id="btn">Add</button>
+  <button id="btn-del"></button>
+  <ul>
+    <li id="li"></li>
+  </ul>
+
+
+
+  <!-- <script>
+  //todo app to show tassk and delete as well..delete btn adjacent to each task
+  let btn=document.getElementById("btn");
+  let btnDel=document.getElementById("btn-del");
+  let taskInput=document.getElementById("task");
+  let tasks=[];
+  btn.addEventListener("click",function(){
+    let task=taskInput.value;
+    if(task){
+      tasks.push(task);
+      console.log("Tasks:",tasks);
+      taskInput.value="";
+    }
+  });
+  btnDel.addEventListener("click",function(){
+    let task=taskInput.value;
+    let index=tasks.indexOf(task);
+    if(index>-1){
+      tasks.splice(index,1);
+      console.log("Tasks after deletion:",tasks);
+      taskInput.value="";
+    }
+  });
+  const li=document.getElementById("li");
+  setInterval(function(){
+    li.innerHTML="";
+    tasks.forEach(function(t){
+      let listItem=document.createElement("li");
+      listItem.textContent=t;
+      let delBtn=document.createElement("button");
+      delBtn.textContent="Delete";
+      delBtn.addEventListener("click",function(){
+        let index=tasks.indexOf(t);
+        if(index>-1){
+          tasks.splice(index,1);
+          console.log("Tasks after deletion:",tasks);
+        }
+      });
+      listItem.appendChild(delBtn);
+      li.appendChild(listItem);
+    });
+  },0);
+   
+
+  </script> -->
+
+
+</body>
+
+
+</html>
